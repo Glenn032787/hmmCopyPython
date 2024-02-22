@@ -5,7 +5,7 @@ FROM python:3.9
 WORKDIR /app
 
 # Install required Python packages
-RUN pip install numpy pandas pysam statsmodels scipy tables joblib
+RUN pip install numpy pandas pysam statsmodels scipy tables joblib pyyaml
 
 # Copy the current directory contents into the container at /app
 COPY . /app
